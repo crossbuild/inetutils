@@ -50,6 +50,10 @@
 #include "../ifconfig.h"
 
 
+#ifndef PATH_PROCNET_DEV
+# define PATH_PROCNET_DEV "/proc/net/dev"
+#endif
+
 /* ARPHRD stuff.  */
 
 static void
